@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>メニュータブ展開</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #ffffff;
+    }
+    .page-wrapper {
+      max-width: 1280px;
+      margin: 0 auto;
+      position: relative;
+    }
+    .page-wrapper img {
+      width: 100%;
+      display: block;
+    }
+    .hotspot {
+      position: absolute;
+      display: block;
+      /* 確認用：不要なら削除してください */
+      /* background: rgba(255, 0, 0, 0.2); */
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrapper">
+    <img src="top_menu.png" alt="メニュータブ展開状態">
+
+    <!-- ★ここを実際の座標に修正（メニューページ項目の位置） -->
+    <a class="hotspot" href="index.html"
+       style="top: 300px; left: 80px; width: 160px; height: 44px;"
+       aria-label="トップページへ"></a>
+
+    <!-- ★ここを実際の座標に修正（メニューページ項目の位置） -->
+    <a class="hotspot" href="menu.html"
+       style="top: 350px; left: 80px; width: 160px; height: 44px;"
+       aria-label="メニューへ"></a>
+
+    <!-- ★ここを実際の座標に修正（アバウトページ項目の位置） -->
+    <a class="hotspot" href="about.html"
+       style="top: 530px; left: 80px; width: 160px; height: 44px;"
+       aria-label="アクセス・営業時間へ"></a>
+
+  </div>
+</body>
+</html>

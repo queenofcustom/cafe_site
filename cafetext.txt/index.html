@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>(E)Cafeトップページ</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #ffffff;
+    }
+    .page-wrapper {
+      max-width: 1280px;
+      margin: 0 auto;
+      position: relative;
+    }
+    .page-wrapper img {
+      width: 100%;
+      display: block;
+    }
+    /* クリック領域の共通スタイル */
+    .hotspot {
+      position: absolute;
+      display: block;
+      /* 確認用：不要なら削除してください */
+      /* background: rgba(255, 0, 0, 0.2); */
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrapper">
+    <img src="top.png" alt="トップページ">
+
+    <!-- ★ここを実際の座標に修正（左上のメニュータブ相当の位置） -->
+    <a class="hotspot" href="top_menu.html"
+       style="top: 40px; left: 30px; width: 80px; height: 40px;"
+       aria-label="メニューを開く"></a>
+
+  </div>
+</body>
+</html>

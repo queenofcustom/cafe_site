@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>メニュー</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #ffffff;
+    }
+    .page-wrapper {
+      max-width: 1280px;
+      margin: 0 auto;
+      position: relative;
+    }
+    .page-wrapper img {
+      width: 100%;
+      display: block;
+    }
+    .back-link {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      background: rgba(0, 0, 0, 0.55);
+      color: #ffffff;
+      text-decoration: none;
+      padding: 6px 14px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-family: sans-serif;
+      white-space: nowrap;
+      transition: background 0.2s;
+    }
+    .back-link:hover {
+      background: rgba(0, 0, 0, 0.75);
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrapper">
+    <img src="menu.png" alt="メニューページ">
+    <a class="back-link" href="index.html">← トップへ戻る</a>
+  </div>
+</body>
+</html>
